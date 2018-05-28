@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  body{
+    background-image: url(https://media.istockphoto.com/photos/wooden-texture-background-picture-id484096068)
+  }
+  p{
+    height: 50px;
+    text-align: center;
+  }
+  #pervii{
+    margin-top: 200px;
+  }
+
+  .left{
+    margin-right: 50px;
+  }
+  .right{
+    margin-left: 50px;
+  }
+  img{
+    border: 25px solid black;
+    box-shadow: 0 0  50px 2px black;
+  }
+
+  #fourfoto{
+    transform: rotate(25deg);
+  /*eto povorot fotoki n4*/
+   transition: 3s;
+   /*eto deistvie  v 1secundu*/
+  }
+  #fourfoto:hover {
+    transform: rotate(360deg);
+    /*eto povorot fotoki n4*/
+  }
+
+  </style>
+</head>
+<body>
+<p id="pervii">
+  <img class="left" src="https://picsum.photos/400/300/?image=337" alt="">
+  <img class="right" src="https://picsum.photos/400/300/?image=1000" alt="">
+</p>
+<p>
+  <img src="https://picsum.photos/400/300/?image=666" alt="">
+</p>
+
+<p>
+  <img id="fourfoto" class="left" src="https://picsum.photos/400/300/?image=453" alt="">
+  <img class="right" src="https://picsum.photos/400/300/?image=888" alt="">
+</p>
+</body>
+</html>
