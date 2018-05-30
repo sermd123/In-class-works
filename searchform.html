@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+      body{
+        background-color: #333;
+        margin:0;
+        min-width: 600px;
+
+        }
+      form{
+        background-color: #666;
+        padding:50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        /*margin-top: -100px;*/
+        transition: 3s;
+        text-align: right;
+        }
+        form:hover{
+          margin-top: 0;
+        }
+        button{
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          margin-left: 20px;
+          border: 2px solid #333 ;
+          background-image:linear-gradient(#333,#777,#333);
+          color: white;
+        }
+        button:hover{
+          background-image: linear-gradient(#777,#333,#777);
+        }
+        input{
+          width: 120px;
+          border: 0;
+          background-color: #666;
+          border-bottom: 1px solid white;
+        }
+        input:focus{
+          width:300px;
+          transition:1s;
+          text-align: right;
+        }
+  </style>
+</head>
+<body>
+    <form action="">
+      <input type="text" placeholder="Введите текст"><button>GO</button>
+    </form>
+</body>
+</html>
