@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    body{
+      background-color: #333;
+    }
+    #preloader{
+      /*background-color: red;*/
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: -100px;
+    }
+
+    #preloader .big{
+      width: 100px;
+      height: 100px;
+      /*background-color: yellow;*/
+      position: relative;
+      top: 47px;
+      left: 47px;
+      border-radius: 53px;
+      border: 3px solid white;
+    }
+
+#preloader .small{
+  width: 9px;
+  height: 9px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 45.5px;
+  left: -9px;
+  border: 3px solid #333;
+  border-radius: 8px;
+
+}
+
+/*создаем кадры анимации*/
+/*at-rules*/
+/*@keyframes  спец конструкция анимации*/
+
+@keyframes orbit {
+  from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+    /*привязка к анимации*/
+
+    }
+    #preloader .big{
+      animation: orbit 5s infinite linear ;
+}
+#preloader .small{
+  animation: orbit 4s infinite linear
+}
+
+
+
+/* домашка animation-delay*/
+#preloader .satelite{
+  width: 3px;
+  height: 3px;
+  border-radius: 1.5px;
+  background-color: red;
+  position: absolute;
+  left: -10px;
+  top: 3px;
+}
+
+  </style>
+</head>
+<body>
+<div id="preloader">
+  <div class="big">
+    <div class="small">
+      <div class="satelite"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
